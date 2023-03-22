@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
-  name: artists
-  description: Everything about artists
+  name: guitarsneoart
+  description: about artists guitar
 spec:
   owner: artist-relations-team

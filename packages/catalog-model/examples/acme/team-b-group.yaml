@@ -1,13 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: team-b
-  description: Team B
+  name: team-adsneo
+  description: Team neo
 spec:
   type: team
   profile:
-    displayName: Team B
-    email: team-b@example.com
+    displayName: Team Neo
+    email: team-neo@example.com
     picture: https://avatars.dicebear.com/api/identicon/team-b@example.com.svg?background=%23fff&margin=25
   parent: backstage
   children: []
@@ -15,13 +15,13 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: amelia.park
+  name: adsneo.l
 spec:
   profile:
-    displayName: Amelia Park
-    email: amelia-park@example.com
+    displayName: adsneo.l
+    email: adsneo.l@example.com
     picture: https://avatars.dicebear.com/api/avataaars/amelia-park@example.com.svg?background=%23fff
-  memberOf: [team-b]
+  memberOf: [team-adsneo]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -32,7 +32,7 @@ spec:
     displayName: Colette Brock
     email: colette-brock@example.com
     picture: https://avatars.dicebear.com/api/avataaars/colette-brock@example.com.svg?background=%23fff
-  memberOf: [team-b]
+  memberOf: [team-adsneo]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -43,7 +43,7 @@ spec:
     displayName: Jenny Doe
     email: jenny-doe@example.com
     picture: https://avatars.dicebear.com/api/avataaars/jenny-doe@example.com.svg?background=%23fff
-  memberOf: [team-b]
+  memberOf: [team-adsneo]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User

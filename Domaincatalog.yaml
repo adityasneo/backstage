@@ -4,4 +4,4 @@ metadata:
   name: guitarsneoart
   description: about artists guitar
 spec:
-  owner: team-sneo
+  owner: ${{values.owner | dump}}

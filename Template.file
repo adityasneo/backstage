@@ -52,9 +52,8 @@ spec:
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
 
-    - id: register
-      name: Register
-      action: catalog:register
-      input:
-        repoContentsUrl: ${{ steps['publish'].output.repoContentsUrl }}
-        catalogInfoPath: '/catalog-info.yaml'
+    output:
+    remoteUrl: '{{ steps.publish.output.remoteUrl }}'
+    links:
+      - title: Repository
+        url: ${{ steps.publish.output.remoteUrl }}

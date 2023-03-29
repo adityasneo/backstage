@@ -6,7 +6,7 @@ metadata:
   title: sneo template
   description: to check sneo template demo
 spec:
-  owner: lella.sneo@status.com
+  owner: sneo@neo.com
   type: service
 
   # these are the steps which are rendered in the frontend with the form input

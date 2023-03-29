@@ -1,0 +1,15 @@
+# Example:
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sneo
+  namespace: sneo-system
+  description: neo company
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-Sneo
+  providesApis:
+    - company
+    - internal/streetlights
+    - hello-world

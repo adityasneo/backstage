@@ -2,23 +2,23 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 # some metadata about the template itself
 metadata:
-  name: v1beta3-demo
-  title: Test Action template
-  description: scaffolder v1beta3 template demo
+  name: sneo-demo
+  title: sneo template
+  description: to check sneo template demo
 spec:
-  owner: backstage/techdocs-core
+  owner: lella.sneo@status.com
   type: service
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
-    - title: Fill in some steps
+    - title: Fill in some steps about sneo
       required:
         - name
       properties:
         name:
           title: Name
           type: string
-          description: Unique name of the component
+          description: sneo details
           ui:autofocus: true
           ui:options:
             rows: 5
@@ -36,20 +36,13 @@ spec:
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
-    - id: fetch-base
-      name: Fetch Base
+    - id: template
+      name: Fetch Skeleton + Template
       action: fetch:template
       input:
         url: ./template
         values:
           name: ${{ parameters.name }}
-
-    - id: fetch-docs
-      name: Fetch Docs
-      action: fetch:plain
-      input:
-        targetPath: ./community
-        url: https://github.com/backstage/community/tree/main/backstage-community-sessions
 
     - id: publish
       name: Publish

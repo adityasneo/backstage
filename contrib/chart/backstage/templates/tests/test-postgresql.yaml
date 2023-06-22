@@ -14,7 +14,7 @@ spec:
         - name: PG_HOST
           value: {{ include "postgresql.serviceName" . | quote }}
         - name: PG_PORT
-          value: 5432
+          value: {{ .Values.postgresql.service.port | quote }}
         - name: PG_USER
           value: {{ .Values.global.postgresql.postgresqlUsername | quote }}
         - name: PGPASSWORD
